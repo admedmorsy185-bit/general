@@ -2,75 +2,75 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>جينرال للأدوات المنزلية</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font Awesome للأيقونات -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>جينرال للأدوات المنزلية</title>
 
-  <!-- خط عربي -->
+  <!-- خط عربي عريض -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- أيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
     }
 
     body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Cairo', sans-serif;
       background: #ffffff;
       color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
     .card {
-      width: 100%;
-      max-width: 360px;
+      width: 90%;
+      max-width: 420px;
       border: 3px solid #000;
       border-radius: 24px;
       padding: 30px 20px;
       text-align: center;
     }
 
-    .card img {
-      width: 120px;
-      height: auto;
-      margin-bottom: 15px;
+    .logo img {
+      width: 140px;
+      max-width: 100%;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 900;
-      margin: 10px 0 25px;
+      margin-bottom: 25px;
     }
 
     .links {
       display: flex;
       justify-content: space-around;
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     .links a {
       text-decoration: none;
       color: #000;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .links i {
       font-size: 32px;
-      transition: transform 0.2s ease;
+      display: block;
+      margin-bottom: 8px;
     }
 
     .links a:hover {
-      transform: scale(1.2);
-    }
-
-    .labels {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 10px;
-      font-size: 16px;
-      font-weight: 700;
+      opacity: 0.7;
     }
   </style>
 </head>
@@ -80,31 +80,31 @@
   <div class="card">
 
     <!-- اللوجو -->
-    <img src="logo.png" alt="General Logo">
+    <div class="logo">
+      <img src="logo.png" alt="General Logo">
+    </div>
 
     <!-- اسم المحل -->
     <h1>جينرال للأدوات المنزلية</h1>
 
-    <!-- الأيقونات -->
+    <!-- السوشيال -->
     <div class="links">
+
       <a href="https://www.facebook.com/share/1AXo5icaLH/" target="_blank">
         <i class="fab fa-facebook"></i>
+        فيسبوك
       </a>
 
       <a href="https://www.tiktok.com/@01148539785_general" target="_blank">
         <i class="fab fa-tiktok"></i>
+        تيك توك
       </a>
 
       <a href="https://t.me/atshift3" target="_blank">
         <i class="fab fa-telegram"></i>
+        تيليجرام
       </a>
-    </div>
 
-    <!-- أسماء المنصات -->
-    <div class="labels">
-      <div>فيسبوك</div>
-      <div>تيك توك</div>
-      <div>تليجرام</div>
     </div>
 
   </div>
