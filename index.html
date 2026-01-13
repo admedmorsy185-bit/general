@@ -1,56 +1,112 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>جينرال للأدوات المنزلية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- خط عربي -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #fff;
-      color: #000;
+      min-height: 100vh;
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
+      justify-content: center;
+      font-family: 'Cairo', sans-serif;
+      background: #ffffff;
+      color: #000;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 360px;
+      border: 3px solid #000;
+      border-radius: 24px;
+      padding: 30px 20px;
       text-align: center;
     }
-    .box {
-      border: 3px solid #000;
-      padding: 30px 20px;
-      max-width: 350px;
-      width: 90%;
+
+    .card img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 15px;
     }
+
     h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
+      font-size: 26px;
       font-weight: 900;
-      letter-spacing: 2px;
+      margin: 10px 0 25px;
     }
-    a {
-      display: block;
-      margin: 15px 0;
-      padding: 12px;
-      border: 2px solid #000;
+
+    .links {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+
+    .links a {
       text-decoration: none;
       color: #000;
-      font-weight: bold;
+      font-size: 32px;
+      transition: transform 0.2s ease;
     }
-    a:hover {
-      background: #000;
-      color: #fff;
+
+    .links a:hover {
+      transform: scale(1.2);
+    }
+
+    .labels {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 700;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="box">
-    <h1>جينرال</h1>
+  <div class="card">
 
-    <a href="https://www.facebook.com/share/1AXo5icaLH/" target="_blank">فيسبوك</a>
-    <a href="https://www.tiktok.com/@01148539785_general?_r=1&_t=ZS-931R8ypnMrx" target="_blank">تيك توك</a>
-    <a href="https://t.me/atshift3" target="_blank">تليجرام</a>
+    <!-- اللوجو -->
+    <img src="logo.png" alt="General Logo">
+
+    <!-- اسم المحل -->
+    <h1>جينرال للأدوات المنزلية</h1>
+
+    <!-- الأيقونات -->
+    <div class="links">
+      <a href="https://www.facebook.com/share/1AXo5icaLH/" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+
+      <a href="https://www.tiktok.com/@01148539785_general" target="_blank">
+        <i class="fab fa-tiktok"></i>
+      </a>
+
+      <a href="https://t.me/atshift3" target="_blank">
+        <i class="fab fa-telegram"></i>
+      </a>
+    </div>
+
+    <!-- أسماء المنصات -->
+    <div class="labels">
+      <div>فيسبوك</div>
+      <div>تيك توك</div>
+      <div>تليجرام</div>
+    </div>
+
   </div>
 
 </body>
